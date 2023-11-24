@@ -1,11 +1,15 @@
 {% extends 'main/layout.html' %}
+{% load static %}
 
-{% block title%}Главная страница{% endblock %}
+{% block title %}Главная страница{% endblock %}
 
 {% block content%}
     <div class="features">
-        <h1>Рецензии</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cumque debitis dicta ipsum minima modi nihil obcaecati repellat, voluptates. Eligendi.</p>
-        <button class="btn btn-warning"> Список лучших </button>
+        <h1>Сайт Music Review</h1>
+        <img src="{% static 'main/img/Deftones05.jpg' %}" alt="Заставка" width="500" height="400">
+        <p> Данный сайт призван познакомить гостей с отличной музыкой.</p>
+
+        <button id = "btn1" class="btn btn-secondary"> читать биографии </button>
+        <button id = "btn2" class="btn btn-success"> читать рецензии </button>
     </div>
 {% endblock %}
