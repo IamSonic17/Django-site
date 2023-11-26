@@ -5,7 +5,16 @@
 {% block content %}
     <div class="features">
         <h1>Биографии известных музыкантов</h1>
-        <button class="btn btn-warning"> Список лучших </button>
+        {% if bios %}
+            {% for el in bios %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.description }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Биографий пока нет</p>
+        {% endif %}
     </div>
 {% endblock %}
 
