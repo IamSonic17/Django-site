@@ -10,6 +10,7 @@ aside {
     height: 100vh;
     border-right: 4px  solid #4d4d4d;
     color: #4d4d4d;
+    position: fixed;
 }
 
 aside img {
@@ -55,18 +56,61 @@ main .features {
     float: left;
     color: #4d4d4d;
     margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 50%;             
     text-align: center;
     width: 75%;
+    position: center;
 }
 
-main .features h1 {font-size: 20px; color: #cfe5dc}
-main .features p {max-width: 400px; margin: 0px auto; color: #cfe5dc;}
+main .features h1 {margin-top: 20px; font-size: 20px; color: #cfe5dc}
+main .features h3 {font-size: 20px; color: #121313}
+main .features p {max-width: 400px; margin: 0px auto; color: #4d4d4d; font-size: 15px}
 main .features img {width: 60%; margin: 25px auto}
-main .features button {width: 20%; margin-top: 30px}
 
-.alert-warning {
+
+.alert-dark {
+    background-color: grey;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
     font-size: 15px;
-    width: 100%;
-    text-align: center;
-    #background: #cfe5dc;
+    width: 800px;
+    text-align: left;
+    float: left;
+    clear: both;
+    margin: 20px 14%;
+    color: #121313;
+    border-style: none;
 }
+
+.btn {
+    display: inline-block;
+    background: grey;
+    color: #121313;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 30px;
+   }
+
+.btn2 {
+    display: inline-block;
+    color: #0a6aad;
+    border-radius: 3px;
+   }
+
+main .articles {
+   width: 800px;
+   margin: 0px auto;
+   color: #4d4d4d;
+   text-align: left;
+   font-size: 15px;
+   padding-top: 30px;
+   padding-left: 100px;
+   padding-right: 0px;
+   text-indent: 25px;
+   }
+
+main .articles h1 {text-align: center; padding: 20px;}
+main .articles img {width: 700px;}

@@ -7,9 +7,9 @@
     <div class="features">
         <h1>Сайт Music Review</h1>
         <img src="{% static 'main/img/Deftones05.jpg' %}" alt="Заставка" width="500" height="400">
-        <p> Данный сайт призван познакомить гостей с отличной музыкой.</p>
+        <p> Сайт о самых крутых представителях альтернативного метала эпохи Миллениум. Здесь можно почитать их биографии и рецензии на отдельные полноформатные записи.</p>
 
-        <button id = "btn1" class="btn btn-secondary"> читать биографии </button>
-        <button id = "btn2" class="btn btn-success"> читать рецензии </button>
+        <a href="{% url 'bio_home' %}" class="btn"> читать биографии </a>
+        <a href="{% url 'bio_home' %}" class="btn"> читать рецензии </a>
     </div>
 {% endblock %}

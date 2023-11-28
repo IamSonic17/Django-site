@@ -7,9 +7,10 @@
         <h1>Биографии известных музыкантов</h1>
         {% if bios %}
             {% for el in bios %}
-                <div class="alert alert-warning">
+                <div class="alert alert-dark">
                     <h3>{{ el.title }}</h3>
-                    <p>{{ el.description }}</p>
+                    <p2>{{ el.description }}</p2>
+                    <a href="{% url 'bio_detail' el.id %}" class="btn2">Читать полностью</a>
                 </div>
             {% endfor %}
         {% else %}

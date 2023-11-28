@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} {{ biography.title }} {% endblock %}
+
+{% block content %}
+    <div class="articles">
+        <h1>{{ biography.title }}</h1>
+        {% if biography.image %}
+            <img src="{{ biography.image.url }}">
+        {% endif %}
+        <p>{{ biography.full_text|linebreaks }}</p>
+    </div>
+{% endblock %}
+
