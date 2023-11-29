@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} {{ rev.title }} {% endblock %}
+
+{% block content %}
+    <div class="articles">
+        <h1>{{ rev.title }}</h1>
+        {% if rev.image %}
+            <img src="{{ rev.image.url }}">
+        {% endif %}
+        <p>{{ rev.full_text|linebreaks }}</p>
+    </div>
+{% endblock %}

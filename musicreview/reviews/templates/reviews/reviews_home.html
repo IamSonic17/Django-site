@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Рецензии на альбомы {% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Рецензии на альбомы</h1>
+        {% if rev %}
+            {% for el in rev %}
+                <div class="alert alert-dark">
+                    <h3>{{ el.title }}</h3>
+                    <p2>{{ el.description }}</p2>
+                    <a href="{% url 'bio_detail' el.id %}" class="btn2">Читать полностью</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Рецензий пока нет</p>
+        {% endif %}
+    </div>
+{% endblock %}
