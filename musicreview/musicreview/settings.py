@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'main',
     'bio',
     'reviews',
+    'book',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

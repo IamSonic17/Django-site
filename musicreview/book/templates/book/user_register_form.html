@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Регистрация {% endblock %}
+
+{% block content %}
+    <div class="fea">
+        <h2>Регистрация</h2>
+        <form action="{% url 'new_user' %}" method="POST" class="w3-container">
+            {{form.as_p}}
+            <div class="btn3">
+                <input type="submit" value=" Зарегистрироваться " class="w3-btn w3-green w3-large w3-right">
+            </div>
+        {% csrf_token %}
+        </form>
+    </div>
+
+{% endblock %}

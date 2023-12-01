@@ -114,3 +114,49 @@ main .articles {
 
 main .articles h1 {text-align: center; padding: 20px;}
 main .articles img {width: 700px;}
+main .fea {
+    padding-top: 50px;
+    padding-left: 100px;
+    }
+
+main .btn3 {
+    width: 17%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 550px;
+    }
+main .fea p {
+   box-sizing: border-box;
+   margin: 20px auto;
+   text-align: right;
+   font-size: 15px;
+   padding-top: 20px;
+   padding-left:200px;
+   padding-right: 580px;
+   text-indent: 25px;
+   color: #4d4d4d;
+   width: 100%;
+   height: 50px;
+}
+
+main .fea li {
+   box-sizing: border-box;
+   margin: 0px auto;
+   text-align: left;
+   font-size: 15px;
+   padding-top: 0px;
+   padding-left:317px;
+   padding-right: 0px;
+   #text-indent: 25px;
+   color: #4d4d4d;
+   width: 100%;
+}
+
+main .features h1 {margin-top: 0px; padding-top: 20px; font-size: 20px; color: #cfe5dc; text-align: center;}
+main .su {margin-top: 0px; padding-top: 40px; text-align: center; font-size: 15px; color: #cfe5dc}
+
+main .features h3 {margin-top: 0px; font-size: 20px; color: #121313; text-align: left;}
+main .features h5 {margin-top: 0px; font-size: 15px; color: #121313; text-align: left;}
+main .features h4 {margin-top: 0px; font-size: 15px; color: #4d4d4d; text-align: left;}
+
+

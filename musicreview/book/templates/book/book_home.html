@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Гостевая книга {% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Гостевая книга</h1>
+        <h6><a href="{% url 'new_user' %}" class="link"> Регистрация </a></h6>
+        {% if mes %}
+            {% for el in mes %}
+                <div class="alert alert-dark">
+                    <h6>{{ el.author }}</h6>
+                    <h5>{{ el.date }}</h5>
+                    <h4>{{ el.subject }}</h4>
+                    <h4>{{ el.full_text }}</h4>
+                </div>
+            {% endfor %}
+        {% else %}
+           <p>Сообщений пока нет</p>
+        {% endif %}
+    </div>
+{% endblock %}
