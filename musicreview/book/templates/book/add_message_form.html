@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Написать сообщение {% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Написать сообщение</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.subject }}<br>
+            {{ form.full_text }}<br>
+            <span>{{ error }}</span><br>
+            <button class="btn btn-success" type="submit">Отправить сообщение</button>
+        </form>
+    </div>
+{% endblock %}

@@ -123,7 +123,7 @@ main .btn3 {
     width: 17%;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 550px;
+    margin-left: 630px;
     }
 main .fea p {
    box-sizing: border-box;
@@ -132,7 +132,7 @@ main .fea p {
    font-size: 15px;
    padding-top: 20px;
    padding-left:200px;
-   padding-right: 580px;
+   padding-right: 500px;
    text-indent: 25px;
    color: #4d4d4d;
    width: 100%;
@@ -152,11 +152,31 @@ main .fea li {
    width: 100%;
 }
 
-main .features h1 {margin-top: 0px; padding-top: 20px; font-size: 20px; color: #cfe5dc; text-align: center;}
-main .su {margin-top: 0px; padding-top: 40px; text-align: center; font-size: 15px; color: #cfe5dc}
+main .fea h1 {margin-top: 0px; padding-top: 20px; padding-left: 100px; font-size: 20px; color: #cfe5dc; text-align: center;}
+main .features h1 {margin-top: 0px; padding-top: 20px; padding-bottom: 20px; font-size: 20px; color: #cfe5dc; text-align: center;}
+main .su {margin-top: 0px; padding-top: 80px; padding-left:156px; text-align: center; font-size: 15px; color: #cfe5dc}
 
 main .features h3 {margin-top: 0px; font-size: 20px; color: #121313; text-align: left;}
 main .features h5 {margin-top: 0px; font-size: 15px; color: #121313; text-align: left;}
 main .features h4 {margin-top: 0px; font-size: 15px; color: #4d4d4d; text-align: left;}
+
+main .feat {
+    padding-top: 30px;
+    margin_top: 30px;
+    padding-left: 240px;
+    text-align: center;
+    width: 100%;
+}
+
+main .feat h2 {margin-top: 0px; padding-top: 10px; font-size: 20px; color: #cfe5dc; text-align: center;}
+#main .feat p {margin-top: 0px; padding-top: 20px; margin-left: -688px; font-size: 15px; color: #121313; text-align: center;}
+#main .form-group2 {margin-top: 0px; width: 400%; padding-top: 10px; margin-left: -195px; font-size: 15px; color: #212222; text-align: center;}
+
+main .btn4 {
+    width: 17%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 200px;
+}
 
 
