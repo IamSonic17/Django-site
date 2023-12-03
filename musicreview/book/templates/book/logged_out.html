@@ -1,0 +1,10 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Выход {% endblock %}
+
+{% block content %}
+        <h2>Вы вышли с сайта</h2>
+        <p>
+            Вы можете <a href="{% url 'login' %}">снова войти</a>, или <a href="/">вернуться на главную страницу</a>.
+        </p>
+{% endblock %}

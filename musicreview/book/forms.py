@@ -1,10 +1,9 @@
-from django.contrib.auth.forms import UserCreationForm
 from django import forms
-from django.contrib.auth.forms import UserCreationForm, UsernameField
+from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from django.forms import ModelForm, TextInput, Textarea, DateTimeInput
+from django.forms import ModelForm, TextInput, Textarea
 
-from .models import Book2, Book3
+from .models import Book3
 
 
 class RegistrationForm(UserCreationForm):
@@ -16,30 +15,6 @@ class RegistrationForm(UserCreationForm):
     class Meta:
         model = User
         fields = ("username", "email")
-
-
-class Book2Form(ModelForm):
-    class Meta:
-        model = Book2
-        fields = ("subject", "full_text", "author")
-
-        widgets = {
-            "subject":  TextInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Тема'
-            }),
-            "full_text": Textarea(attrs={
-                'class': 'form-control',
-                'placeholder': 'Текст статьи'
-
-            }),
-            "author": TextInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Автор',
-                'value': 'request.user.id'
-            }),
-
-        }
 
 
 class Book3Form(ModelForm):
@@ -60,7 +35,6 @@ class Book3Form(ModelForm):
             "author": TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Автор',
-                'initial': 1
             }),
 
         }

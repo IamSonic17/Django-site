@@ -1,8 +1,8 @@
-from django.contrib.auth import login, authenticate
-from django.http import HttpResponseRedirect, HttpResponse
+from django.contrib.auth import login, authenticate, logout
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
-from .forms import RegistrationForm, Book2Form, Book3Form, LoginForm
-from .models import Book2, Book3
+from .forms import RegistrationForm, Book3Form, LoginForm
+from .models import Book3
 from django.contrib.auth.models import User
 
 
@@ -45,6 +45,11 @@ def login_user(request):
         form = LoginForm()
 
     return render(request, "book/login.html", context={"form": form})
+
+
+def logout_user(request):
+    logout(request)
+    return redirect('book_home')
 
 
 def add_message_view(request):

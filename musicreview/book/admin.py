@@ -1,12 +1,5 @@
 from django.contrib import admin
-from .models import Book2, Book3
-
-
-@admin.register(Book2)
-class Book2Admin(admin.ModelAdmin):
-    list_display = 'pk', 'author', 'subject'
-    list_display_links = ['author']
-    ordering = ['-pk']
+from .models import Book3
 
 
 @admin.register(Book3)

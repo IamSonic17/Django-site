@@ -6,7 +6,7 @@
     <div class="features">
         <h1>Гостевая книга</h1>
         {% if request.user.is_authenticated %}
-            <h6>Вы вошли под именем {{ request.user.username }}. Если хотите выйти нажмите <a href="{% url 'new_user' %}" class="link">здесь</a></h6>
+            <h6>Вы вошли под именем {{ request.user.username }}. Если хотите выйти нажмите <a href="{% url 'logout' %}" class="link">здесь</a></h6>
             <h6><a href="{% url 'add_message' %}" class="btn"> Оставить сообщение </a></h6>
         {% else %}
         <h6> <a href="{% url 'login' %}" class="link"> Войти </a>&nbsp;<a href="{% url 'new_user' %}" class="link"> Регистрация </a></h6>
