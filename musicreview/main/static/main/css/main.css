@@ -106,14 +106,15 @@ main .articles {
    color: #4d4d4d;
    text-align: left;
    font-size: 15px;
-   padding-top: 30px;
+   padding-top: 0px;
    padding-left: 100px;
+   margin-right: 270px;
    padding-right: 0px;
    text-indent: 25px;
    }
 
-main .articles h1 {text-align: center; padding: 20px;}
-main .articles img {width: 700px;}
+main .articles h1 {text-align: center; padding: 20px; margin-right: 30px;}
+main .articles img {width: 700px; height: 526px; margin-left: -240; margin-top: 0px; margin-bottom: 0px;}
 main .fea {
     padding-top: 50px;
     padding-left: 100px;
@@ -179,4 +180,31 @@ main .btn4 {
     margin-left: 200px;
 }
 
+main .feat img {width: 200px; height: 200px; margin: 0px; margin-left: 290px; margin-bottom: 10px;}
+main .feat h3 {margin-top: 0px; text-align: center;}
+main .feat2 h1 {padding-top: 10px; padding-bottom: 40px; margin-left: 180px; text-align: center; color: #cfe5dc; font-size: 20px}
+main .feat2 p {margin-top: 0px; margin-left: -20px; margin-bottom: 20px; text-align: center; font-size: 20x;}
+main .feat2 img {width: 250px; height: 250px; margin: 0px; margin-left: 180px; margin-bottom: 10px;}
 
+main .feat2 {
+    padding-top: 30px;
+    margin_top: 30px;
+    padding-left: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+main .articles2 {
+   width: 800px;
+   margin: 0px auto;
+   color: #4d4d4d;
+   text-align: left;
+   font-size: 15px;
+   padding-top: 30px;
+   padding-left: 220px;
+   padding-right: 0px;
+   text-indent: 25px;
+   }
+
+main .articles2 h1 {text-align: center; padding: 0px; padding-bottom: 30px; font-size: 25px; margin-right: 48px;}
+main .articles2 img {width: 500px; margin-left: 20px; margin-top: 10px; margin-bottom: 10px;}

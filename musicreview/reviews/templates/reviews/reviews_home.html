@@ -3,15 +3,14 @@
 {% block title %} Рецензии на альбомы {% endblock %}
 
 {% block content %}
-    <div class="features">
+    <div class="feat2">
         <h1>Рецензии на альбомы</h1>
         {% if rev %}
             {% for el in rev %}
-                <div class="alert alert-dark">
-                    <h3>{{ el.title }}</h3>
-                    <p2>{{ el.description }}</p2>
-                    <a href="{% url 'bio_detail' el.id %}" class="btn2">Читать полностью</a>
-                </div>
+
+                    <img src="{{ el.image.url }}" width=250 height=250 border="2" style=border-color:#4d4d4d><br>
+                    <p><a href="{% url 'reviews_detail' el.id %}" class="btn4">{{ el.title }}</a></p>
+
             {% endfor %}
         {% else %}
             <p>Рецензий пока нет</p>

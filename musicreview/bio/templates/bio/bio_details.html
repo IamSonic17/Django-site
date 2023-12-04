@@ -6,7 +6,7 @@
     <div class="articles">
         <h1>{{ biography.title }}</h1>
         {% if biography.image %}
-            <img src="{{ biography.image.url }}">
+            <img src="{{ biography.image.url }}" border="2" style=border-color:#4d4d4d>
         {% endif %}
         <p>{{ biography.full_text|linebreaks }}</p>
     </div>

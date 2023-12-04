@@ -3,10 +3,10 @@
 {% block title %} {{ rev.title }} {% endblock %}
 
 {% block content %}
-    <div class="articles">
+    <div class="articles2">
         <h1>{{ rev.title }}</h1>
         {% if rev.image %}
-            <img src="{{ rev.image.url }}">
+            <img src="{{ rev.image.url }}" width=400 height=400 border="2" style=border-color:#4d4d4d>>
         {% endif %}
         <p>{{ rev.full_text|linebreaks }}</p>
     </div>
